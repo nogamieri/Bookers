@@ -1,0 +1,113 @@
+
+/* This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #333;
+}
+h1, h2, h4, p, table, ul{
+    font-family: verdana, arial, helvetica, sans-serif;
+}
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: none;
+}
+a:link { color: #000; }
+a:visited { color: #666; }
+a:hover { color: #fff;
+	background-color: #000;}
+a{
+	font-size: 13px;
+}
+
+body{
+	margin: 33px;
+	font-size: 13px;
+}
+h1{
+	font-size: 26px;
+}
+.top-message{
+	font-size: 13px;
+	margin: 30px;
+	line-height: 25px;
+}
+.top-link{
+	display: inline-block;
+	padding-top: 25px;
+}
+
+/*テーブルのレイアウト*/
+table{
+	font-size: 13px;
+}
+
+th:first-child{
+	font-weight: bold;
+}
+
+th{
+	padding: 0 7px 7px;
+}
+td{
+	padding: 1px 5px 7px;
+
+}
+td.title{
+	width: 184px;
+}
+td.body{
+	width: 390px;
+}
+
+
+/*新規投稿*/
+
+h2{
+	font-size: 19px;
+}
+h4{
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+.box_body{
+	margin-top: 10px;
+}
+
+
+/*showページ*/
+.info{
+	font-size: 13px;
+	padding-left: 30px;
+	padding-bottom: 15px;
+	}
+.bold{
+	font-weight: bold;
+}
+.flash{
+	color: green;
+	margin: 33px;
+}
+
+
+
+/*editページ*/
+.edit_box{
+	margin-bottom: 10px;
+}
